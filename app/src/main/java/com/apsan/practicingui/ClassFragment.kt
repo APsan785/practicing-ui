@@ -33,6 +33,8 @@ class ClassFragment:Fragment(R.layout.fragment_class) {
         slider.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
         slider.startAutoCycle();
 
+
+
     }
 
 }

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         navController = navHostFragment.findNavController()
 
         appBarConfiguration = AppBarConfiguration(
-            setOf(R.id.homeFragment, R.id.chatsFragment, R.id.classFragment, R.id.studyFragment, R.id.feedFragment),
+            setOf(R.id.homeFragment, R.id.chatsFragment, R.id.studyFragment, R.id.feedFragment),
             binding.drawerLayout
         )
 
@@ -40,6 +41,17 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         binding.navView.setupWithNavController(navController)
 
         supportActionBar?.setTitle("")
+
+        navController.addOnDestinationChangedListener{_, dest,_ ->
+            if(dest.id == R.id.classFragment){
+                binding.bottomNav.visibility = View.GONE
+                binding.toolbar.visibility = View.GONE
+            }else{
+                binding.bottomNav.visibility = View.VISIBLE
+                binding.toolbar.visibility = View.VISIBLE
+
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {

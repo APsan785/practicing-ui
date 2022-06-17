@@ -6,7 +6,11 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.apsan.practicingui.HomeFragment" />
+        android:name="com.apsan.practicingui.HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_classFragment"
+            app:destination="@id/classFragment" />
+    </fragment>
     <fragment
         android:id="@+id/chatsFragment"
         android:name="com.apsan.practicingui.ChatsFragment" />
