@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.apsan.practicingui.HomeFragment" />
+    <fragment
+        android:id="@+id/chatsFragment"
+        android:name="com.apsan.practicingui.ChatsFragment" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.apsan.practicingui.FeedFragment" />
+    <fragment
+        android:id="@+id/classFragment"
+        android:name="com.apsan.practicingui.ClassFragment" />
+    <fragment
+        android:id="@+id/studyFragment"
+        android:name="com.apsan.practicingui.StudyFragment" />
+</navigation>

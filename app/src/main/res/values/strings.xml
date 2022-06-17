@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PracticingUI</string>
+    <string name="how_to_use"><u>How to use ?</u></string>
+    <string name="live_class_doubts">
+        <font color="#000000"><b>Live Class</b></font><font color="#16B5DD"> + </font><font color="#000000"><b>Doubts</b></font><font color="#16B5DD"> + </font><font color="#000000"><b>Personal Mentor</b></font>
+</string>
+</resources>

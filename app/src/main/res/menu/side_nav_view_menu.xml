@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/myAccIcon"
+        android:title="My Account"
+        android:icon="@drawable/ic_baseline_chat_24"/>
+    <item android:id="@+id/getUnlimitedDoubtsIcon"
+        android:title="Get Unlimited Doubts"
+        android:icon="@drawable/ic_baseline_class_24"/>
+    <item android:id="@+id/doubtsIcon"
+        android:title="Doubts"
+        android:icon="@drawable/ic_baseline_dynamic_feed_24"/>
+    <item android:id="@+id/mockTestIcon"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Mock Tests"/>
+    <item android:id="@+id/classesIcon"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Classes"
+        />
+    <item android:id="@+id/videosIcon"
+        android:icon="@drawable/ic_baseline_table_view_24"
+        android:title="Videos"/>
+    <item android:id="@+id/ncertBooksIcon"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="NCERT Books &amp; Solutions"/>
+
+    <item android:id="@+id/storeIcon"
+        android:title="Store"
+        android:icon="@drawable/ic_baseline_class_24"/>
+
+    <item android:id="@+id/redeemCreditIcon"
+        android:icon="@drawable/ic_baseline_dynamic_feed_24"
+        android:title="Redeem Credits"/>
+
+    <group android:id="@+id/group1">
+        <item android:id="@+id/others"
+            android:title="Others">
+            <menu>
+                <item android:id="@+id/settingsIcon"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_baseline_home_24"/>
+
+                <item android:id="@+id/helpIcon"
+                    android:title="Help and Support"
+                    android:icon="@drawable/ic_baseline_person_24"/>
+
+                <item android:id="@+id/tandCIcon"
+                    android:title="T&amp;C and Pivacy Policy"
+                    android:icon="@drawable/ic_baseline_table_view_24"/>
+                <item android:id="@+id/rateUsIcon"
+                    android:title="Rate Us"
+                    android:icon="@drawable/ic_baseline_chat_24"/>
+
+                <item android:id="@+id/shareIcon"
+                    android:title="Share"
+                    android:icon="@drawable/ic_baseline_class_24"/>
+
+                <item android:id="@+id/logoutIcon"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_baseline_dynamic_feed_24"/>
+
+
+            </menu>
+
+
+        </item>
+
+
+    </group>
+
+
+</menu>

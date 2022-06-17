@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/drawable/ask_now_btn_bg.xml" value="0.1325" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/drawable/book_free_class_bg.xml" value="0.1325" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/drawable/button_bg.xml" value="0.1325" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/drawable/ic_baseline_monetization_on_24.xml" value="0.1325" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1325" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/drawable/nav_header_button_bg.xml" value="0.1325" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/drawable/profile_image.xml" value="0.1325" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/drawable/tick_mark.xml" value="0.1325" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/layout/empty_layout.xml" value="0.2" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/layout/fragment_class.xml" value="0.22" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/layout/image_slider_layout_item1.xml" value="0.2" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/layout/profile_image.xml" value="0.5" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/menu/side_nav_view_menu.xml" value="0.2" />
+        <entry key="..\:/ADARSH/WorkSpace/Android_/PracticingUI/app/src/main/res/menu/toolbar_menus.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
