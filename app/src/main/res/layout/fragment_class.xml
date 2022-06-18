@@ -116,6 +116,7 @@
 
 
     <ScrollView
+        android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/book_free_class_TV"
@@ -425,44 +426,54 @@
                     android:textSize="21sp"
                     android:textStyle="bold" />
 
-                <androidx.cardview.widget.CardView
-
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:backgroundTint="@color/app_blue_color"
-                    app:cardCornerRadius="12dp">
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="10dp"
+                        app:layout_constraintTop_toTopOf="@id/top_card"
+                        app:layout_constraintBottom_toTopOf="@id/top_card"
+                        app:layout_constraintStart_toStartOf="@id/top_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/app_blue_color"
+                        android:elevation="20dp"
+                        android:text="Daily Plan"
+                        android:textColor="@color/white" />
+
 
                     <androidx.cardview.widget.CardView
-                        app:cardElevation="10dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/top_card"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="2dp"
-                        android:background="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:backgroundTint="@color/app_blue_color"
                         app:cardCornerRadius="12dp">
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:elevation="20dp"
-                            >
+                            android:layout_margin="2dp"
+                            android:background="@color/white"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="10dp">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:background="@color/app_dull_blue_color"
-                                android:elevation="5000dp"
-                                android:text="Daily Plan"
-                                android:textColor="@color/white"
-                                app:layout_constraintBottom_toTopOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
+
+
+
 
                             <RelativeLayout
+                                android:id="@+id/rela_layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:padding="20dp">
+                                android:padding="20dp"
+                                app:layout_constraintTop_toTopOf="parent">
 
                                 <ImageView
                                     android:id="@+id/headphone_icon"
@@ -776,41 +787,68 @@
                                 </androidx.cardview.widget.CardView>
 
                             </RelativeLayout>
-                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </androidx.cardview.widget.CardView>
 
                     </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                </androidx.cardview.widget.CardView>
 
                 <TextView
-                    android:layout_marginHorizontal="20dp"
-                    android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
                     android:text="FAQ(Frequently Asked Questions)"
+                    android:textColor="@color/white"
                     android:textSize="20sp"
-                    android:layout_marginTop="30dp"/>
+                    android:textStyle="bold" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/mirror_score_course_ans_layout"
+                    >
 
                 <TextView
-                    android:layout_marginHorizontal="20dp"
-                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="20dp"
                     android:text="Mirror Score se hi kyu course kare?"
+                    android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:layout_marginTop="30dp"/>
+                    android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/btn_mirror_score_course_ans"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_24"
+                        app:tint="@color/white"
+                        android:rotation="-90"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <TextView
-                    android:layout_marginHorizontal="20dp"
+                    android:id="@+id/mirror_score_course_answer_TV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
                     android:text="android:clipChildren= allows each child to draw outside of its own bounds, within the parent. It doesn't allow children to draw outside of the parent itself."
-                    android:textSize="16.5sp"
-                    android:layout_marginTop="30dp"/>
-
+                    android:textColor="@color/white"
+                    android:textSize="16.5sp" />
 
 
             </LinearLayout>

@@ -33,7 +33,18 @@ class ClassFragment:Fragment(R.layout.fragment_class) {
         slider.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
         slider.startAutoCycle();
 
-
+        binding.mirrorScoreCourseAnsLayout.setOnClickListener {
+            if(binding.mirrorScoreCourseAnswerTV.visibility == View.VISIBLE){
+                binding.mirrorScoreCourseAnswerTV.visibility = View.GONE
+                binding.btnMirrorScoreCourseAns.rotation = 90F
+            }else{
+                binding.mirrorScoreCourseAnswerTV.visibility = View.VISIBLE
+                binding.btnMirrorScoreCourseAns.rotation = -90F
+                binding.scrollView.post {
+                    binding.scrollView.fullScroll(View.FOCUS_DOWN)
+                }
+            }
+        }
 
     }
 
